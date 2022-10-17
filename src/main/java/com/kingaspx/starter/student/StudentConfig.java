@@ -14,6 +14,7 @@ public class StudentConfig {
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository repository) {
         return args -> {
+            // 👇 Just for Test
             Student student = new Student(
                     "Abner",
                     "abnerodrigs@gmail.com",

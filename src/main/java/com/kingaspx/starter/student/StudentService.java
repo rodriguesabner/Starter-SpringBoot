@@ -31,7 +31,7 @@ public class StudentService {
         studentRepository.save(student);
     }
 
-    public void deleteByEmail(Long studentId) {
+    public void delete(Long studentId) {
         boolean studentExists = studentRepository.existsById(studentId);
         if (!studentExists) {
             throw new IllegalStateException("Student not exists");
